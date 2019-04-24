@@ -1,0 +1,76 @@
+html,
+body {
+    overflow: hidden;
+    width   : 100%;
+    height  : 100%;
+    margin  : 0;
+    padding : 0;
+    background-color: blue;
+    cursor: none;
+}
+
+canvas {
+    width   : 100%;
+    height  : 100%;
+    touch-action: none;
+    background-color: #9cb1dc;
+    /*cursor: auto;*/
+    cursor: none;
+}
+
+.canvasNoneCursor {
+    /*cursor: none;*/
+}
+
+
+.canvasDragging {
+    /*cursor: all-scroll;*/
+    /*cursor: url(../assets/cursors/icon.png) 16 16, all-scroll;*/
+}
+
+.canvasNotDragging {
+    /*cursor: auto;*/
+    cursor: none;
+}
+
+.cursorNormal {
+    position: absolute;
+    left: -6px;
+    top: -4px;
+    will-change: transform;
+    transform: translate(-999px, -999px);
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.cursor {
+    position: absolute;
+    left: -16px;
+    top: -16px;
+    will-change: transform;
+    transform: translate(-999px, -999px);
+    pointer-events: none;
+    z-index: 9999;
+}
+/*.my-awesome-selector {*/
+    /*cursor: url(./cursors/icon.svg), cursor);*/
+/*}*/
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-uploadMenu2D {
+    text-align: center;
+    width: 91%;
+    background-color: #6fccd4;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    /*cursor: pointer;*/
+    cursor: inherit;
+    color: #363a5e;
+}
+.custom-file-uploadMenu2D:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
